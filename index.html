@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>product</title>
+</head>
+<body>
+    <div class="card">
+        <div class="top-section">
+            <img id="img-continer" src="img/1.jpg" alt="...">
+            <div class="nav">
+                <img onclick="change_img(this)" src="img/1.jpg" alt="...">
+                <img onclick="change_img(this)" src="img/2.jpg" alt="...">
+                <img onclick="change_img(this)" src="img/3.jpg" alt="...">
+            </div>
+            <div class="discount">%20</div>
+        </div>
+        <div class="product-info" dir="rtl">
+            <div class="product-title">نام محصولاتان</div>
+            <div class="description">هودی زنانه فوق العاده جذاب و بامزه. این محصول از جنس پارچه پشمی و پولیشی بسیار گرم و با کیفیت درجه یک تهیه شده است.مناسب برای فصول پاییز زمستان و بهار می‌باشد
+                <p>15هزارتومان</p>
+            </div>
+            <a class="btn">برای خرید کلیک کنید</a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var continer = document.getElementById("img-continer")
+        function change_img(image){
+            continer.src = image.src;
+        }
+    </script>
+</body>
+</html>
